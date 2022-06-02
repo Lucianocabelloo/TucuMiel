@@ -9,22 +9,17 @@
 /* Variables Fuentes */
 /* mixin */
 /* Header */
-.jumbotron {
+.container {
+  margin: 0px;
+}
+
+#hero {
   height: 60vh;
-  margin-bottom: 0px;
-  display: flex;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/miel1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/miel1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.container-jumbo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  margin: 100px;
+  margin-bottom: 200px;
 }
 
 .navbar {
@@ -37,4 +32,56 @@
   font-size: 3rem;
   letter-spacing: 2px;
   font-family: "Dancing Script", cursive;
+}
+
+.hr {
+  margin: 2px;
+}
+
+.boton {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 4rem;
+}
+.boton .botonc {
+  border: 3px solid #f0c82f;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 2px 1px 1px #222222;
+}
+
+/* Main */
+.main {
+  background-color: #36393c;
+}
+
+.section1 {
+  padding: 10px;
+  border-top: solid 5px #e37e1e;
+  border-right: solid 5px #e37e1e;
+  margin-bottom: 20vh;
+}
+.section1 h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: #f0c82f;
+  font-size: 3rem;
+  text-shadow: 5px 2px 2px #222222;
+}
+
+.section2 {
+  padding: 10px;
+  border-bottom: solid 5px #e37e1e;
+  border-left: solid 5px #e37e1e;
+}
+.section2 h2 {
+  font-weight: 700;
+  color: #f0c82f;
+  font-size: 3rem;
+  text-shadow: 5px 2px 2px #222222;
+}
+.section2 p {
+  color: rgba(255, 255, 255, 0.877);
+  font-size: 18px;
 }/*# sourceMappingURL=estilos.css.map */

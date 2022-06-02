@@ -14,9 +14,11 @@ $letra-secundaria:#2222;
 
 /* Variables Fuentes */
 
-$letra-grande: 2rem;
-$letra-mediana: 1,5rem;
-$letra-chica: 1,2rem;
+$letra-grande: 3rem;
+$letra-mediana: 2rem;
+$letra-chica: 1,5rem;
+$shadow: 5px 2px 2px $cuarto;
+$shadow-blanco: 5px 2px 2px $letra-primaria;
 
 /* mixin */
 @mixin background {
@@ -26,26 +28,20 @@ $letra-chica: 1,2rem;
     }
 
 /* Header */
-
-.jumbotron {
+.container{
+    margin: 0px;
+}
+#hero {
     height: 60vh;
-    margin-bottom: 0px;
-    display: flex;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(../img/miel1.jpg);
-    @include background
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,0.5), 
+    rgba(0,0,0,0.5))
+    ,url(/img/miel1.jpg);
+    @include background;
+    margin-bottom: 200px;
 }
-.container-jumbo{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 100px;
-}
+
+
 .navbar{
     height: 100px;
     .collapse{
@@ -55,5 +51,57 @@ $letra-chica: 1,2rem;
         font-size: 3rem;
         letter-spacing: 2px;
         font-family: 'Dancing Script', cursive;
+    }
+}
+
+.hr {
+    margin: 2px;
+}
+.boton{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 4rem;
+    .botonc {
+        border: 3px solid $secundario;
+        padding: 10px;
+        color: #fff;
+        text-shadow: 2px 1px 1px $cuarto;
+    }
+}
+
+/* Main */
+
+.main{
+    background-color: $primario;
+}
+
+.section1 {
+    padding: 10px;
+    border-top: solid 5px $terciario;
+    border-right: solid 5px $terciario;
+    margin-bottom: 20vh;
+    & h2{
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        color: $secundario;
+        font-size: $letra-grande;
+        text-shadow: $shadow;
+    }
+
+}
+.section2{
+    padding: 10px;
+    border-bottom: solid 5px $terciario;
+    border-left: solid 5px $terciario;
+    & h2{
+        font-weight: 700;
+        color: $secundario;
+        font-size: $letra-grande;
+        text-shadow: $shadow;
+    }
+    & p{
+        color: $letra-primaria;
+        font-size: 18px;
     }
 }
