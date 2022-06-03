@@ -1,3 +1,6 @@
+/* Variables Colores */
+/* Variables Fuentes */
+/* mixin */
 * {
   padding: 0px;
   margin: 0px;
@@ -5,9 +8,11 @@
   box-sizing: border-box;
 }
 
-/* Variables Colores */
-/* Variables Fuentes */
-/* mixin */
+.body {
+  background: rgb(227, 126, 30);
+  background: linear-gradient(180deg, rgb(227, 126, 30) 50%, rgba(240, 200, 47, 0.6951155462) 100%);
+}
+
 /* Header */
 .container {
   margin: 0px;
@@ -22,8 +27,12 @@
   margin-bottom: 200px;
 }
 
+.header {
+  background-color: #36393c;
+}
+
 .navbar {
-  height: 100px;
+  height: 50px;
 }
 .navbar .collapse {
   flex-direction: row-reverse;
@@ -32,6 +41,11 @@
   font-size: 3rem;
   letter-spacing: 2px;
   font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px #f0c82f;
+}
+
+.nav-link {
+  color: black !important;
 }
 
 .hr {
@@ -50,16 +64,20 @@
   text-shadow: 2px 1px 1px #222222;
 }
 
-/* Main */
-.main {
-  background-color: #36393c;
+@media (max-width: 990px) {
+  .navbar {
+    height: 100px;
+  }
 }
-
+/* Main */
 .section1 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/panal2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding: 10px;
   border-top: solid 5px #e37e1e;
   border-right: solid 5px #e37e1e;
-  margin-bottom: 20vh;
 }
 .section1 h2 {
   display: flex;
@@ -75,6 +93,8 @@
 }
 
 .section2 {
+  margin-top: 20vh;
+  background-color: #000;
   padding: 10px;
   border-bottom: solid 5px #e37e1e;
   border-left: solid 5px #e37e1e;
