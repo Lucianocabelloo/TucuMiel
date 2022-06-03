@@ -20,7 +20,7 @@
 
 #hero {
   height: 60vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/miel1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/miel1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 }
 /* Main */
 .section1 {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/panal2.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/panal2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
