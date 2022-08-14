@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Miel",
+        "precio": 500,
+        "img": "./img/miel1.jpg",
+        "cantidad": 10
+    },
+    {
+        "id": 2,
+        "nombre": "Polen",
+        "precio": 250,
+        "img": "./img/polen.jpg",
+        "cantidad": 10
+    },
+    {
+        "id": 3,
+        "nombre": "Panal",
+        "precio": 700,
+        "img": "./img/panal1.jpg",
+        "cantidad": 10
+    }
+]
